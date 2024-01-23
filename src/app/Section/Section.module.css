@@ -1,0 +1,47 @@
+.section {
+    display: block;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../../../public/propousal.JPG');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .counter{
+    margin-top: 100%;
+  }
+
+  .welcome{
+    background-color: #F8F0E5;
+    width: 100%;
+    height: 120px;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+
+    text-align: center;
+    padding: 20px;
+  }
+
+  .boxText{
+    margin-top: 60px;
+    background-color: transparent;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+
+  }
+
+  @keyframes slide-in-bottom {
+    0% {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .slideInBottom {
+    animation: slide-in-bottom 1.3s;
+  }

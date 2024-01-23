@@ -1,0 +1,21 @@
+.header {
+    background-color: transparent;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .nav {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .nav:hover {
+    border-bottom: 2px solid #fff;
+  }

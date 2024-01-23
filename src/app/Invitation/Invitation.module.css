@@ -1,0 +1,47 @@
+/* Savedate.module.css */
+.main {
+    display: block;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../../../public/section.JPG');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .header{
+    padding-top: 60px;
+  }
+  
+  .title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+    color: #000000;
+    text-align: center;
+  }
+  
+  .info {
+    margin-top: 280px;
+  }
+  
+  .text {
+    font-family: 'Dancing Script', cursive;
+
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  /* Animation */
+  .appearanimation {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: appearText 1.5s ease-out forwards;
+  }
+  
+  @keyframes appearText {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

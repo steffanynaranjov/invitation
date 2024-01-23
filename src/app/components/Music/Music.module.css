@@ -1,0 +1,13 @@
+.divImage{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 90%;
+    right: 0%;
+    z-index: 1000;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.music{
+margin: 10px;}
