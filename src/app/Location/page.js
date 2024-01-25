@@ -11,6 +11,7 @@ export default function Location() {
 
     window.open(googleMapsLink, '_blank');
   };
+  
 
   const images = [
     "/playamareygua.png",
@@ -58,20 +59,20 @@ export default function Location() {
       <div className={styles.suggestion}>
         <h3 className={styles.title}>Sugerencias de hospedaje</h3>
         <div className={styles.carouselContainer}>
-        <button className={styles.navButton} onClick={handlePrev}>
+        <div className={styles.carouselImage}>
+        <button className={styles.navButtonLeft} onClick={handlePrev}>
           &lt;
         </button>
-        <div className={styles.carouselImage}>
           <Image
             src={images[currentImageIndex]}
-            width={350}
-            height={200}
+            width={500}
+            height={300}
             alt={`Event ${currentImageIndex + 1}`}
           />
-        </div>
-        <button className={styles.navButton} onClick={handleNext}>
+        <button className={styles.navButtonRight} onClick={handleNext}>
           &gt;
         </button>
+        </div>
       </div>
       
       <a

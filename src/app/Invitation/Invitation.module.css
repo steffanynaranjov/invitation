@@ -1,47 +1,98 @@
 /* Savedate.module.css */
 .main {
-    display: block;
-    text-align: center;
-    height: 100vh;
-    width: 100%;
+  display: block;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  /* background-image: url('../../../public/section.JPG');
+  background-size: cover;
+  background-position: center; */
+}
+
+  .main::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background-image: url('../../../public/section.JPG');
     background-size: cover;
     background-position: center;
+    opacity: 0.8;
+    z-index: -1;
   }
 
-  .header{
-    padding-top: 60px;
-  }
-  
-  .title {
-    font-family: 'Dancing Script', cursive;
-    font-size: 80px;
-    color: #000000;
-    text-align: center;
-  }
-  
-  .info {
-    margin-top: 280px;
-  }
-  
-  .text {
-    font-family: 'Dancing Script', cursive;
+.header{
+  padding-top: 60px;
+}
 
-    text-align: center;
-    font-size: 40px;
-  }
-  
-  /* Animation */
-  .appearanimation {
+.flower{
+  position: absolute;
+  top: -5%;
+  left: 0%;
+  transform: rotate(360deg);
+  animation: moveAnimation 2s ease-out forwards;
+}
+
+@keyframes moveAnimation {
+  0% {
     opacity: 0;
-    transform: translateY(20px);
-    animation: appearText 1.5s ease-out forwards;
+    transform: rotate(360deg) translateY(20px); /* Adjust initial position if needed */
   }
-  
-  @keyframes appearText {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg) translateY(0);
   }
-  
+}
+
+.flowerdown{
+  position: absolute;
+  bottom: -10%;
+  left: -20%;
+  transform: rotate(180deg);
+  animation: appearAnimation 2s ease-out forwards;
+}
+
+@keyframes appearAnimation {
+  0% {
+    opacity: 0;
+    transform: rotate(180deg) translateY(20px); /* Adjust initial position if needed */
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(180deg) translateY(0);
+  }
+}
+
+.title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 80px;
+  color: #000000;
+  text-align: center;
+}
+
+.info {
+  margin-top: 280px;
+}
+
+.text {
+  font-family: 'Dancing Script', cursive;
+
+  text-align: center;
+  font-size: 40px;
+}
+
+/* Animation */
+.appearanimation {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: appearText 1.5s ease-out forwards;
+}
+
+@keyframes appearText {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

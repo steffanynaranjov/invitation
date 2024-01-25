@@ -37,19 +37,19 @@ const Counter = () => {
       <div className={styles.col}>
         <div className={styles.box}>
           <p id={styles.hour}>{hours < 10 ? "0" + hours : hours}</p>
-          <span className={styles.text}>Horas</span>
+          <span className={styles.text}>Hs</span>
         </div>
       </div>
       <div className={styles.col}>
         <div className={styles.box}>
           <p id={styles.minute}>{minutes < 10 ? "0" + minutes : minutes}</p>
-          <span className={styles.text}>Minutos</span>
+          <span className={styles.text}>Min</span>
         </div>
       </div>
       <div className={styles.col}>
         <div className={styles.box}>
           <p id={styles.second}>{seconds < 10 ? "0" + seconds : seconds}</p>
-          <span className={styles.text}>Segundos</span>
+          <span className={styles.text}>Seg</span>
         </div>
       </div>
     </div>

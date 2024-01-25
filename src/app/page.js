@@ -1,21 +1,26 @@
-import styles from './page.module.css'
-import Invitation from './Invitation/page'
-import Section from './Section/page'
-import Music from './components/Music/Music'
-import Itinerary from './Itinerary/page'
-import Location  from './Location/page'
-import DressCode from './DressCode/page'
-
+import styles from './Home.module.css';
+import Image from 'next/image';
 
 export default function Home() {
-  return (
-    <main >
-      <Music/>
-      <Invitation/>
-      <Section/>
-      <Itinerary/>
-      <Location/>
-      <DressCode/>
-    </main>
-  )
-}
+    return (
+      <main className={styles.main}>
+        <div className={styles.sobre}>
+        <div className={styles.verticalLine}></div>
+        <a
+        className={styles.homepage}
+        href={'/Home'}
+        rel="noopener noreferrer"
+      >
+            <Image
+            src={'/logo.png'}
+            width={300}
+            height={300}
+            alt={'image map'}
+            className={styles.logo}
+            />
+            </a>
+                <div className={styles.verticalLineB}></div>
+        </div>
+      </main>
+    );
+  }
