@@ -10,25 +10,13 @@
     height: 100vh;
 }
 
-.verticalLine {
-    width: 2px;
-    height: 35vh;
-    background-color: #000;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.logo {
+  position: absolute;
+  top: 30%;
+  left: 13%;
+  transition: transform 0.5s ease;
+}
 
-  .verticalLineB{
-    width: 2px;
-    height: 42vh;
-    background-color: #000;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 210px;
-  }
-
-.logo{
-    position: absolute;
-    top:30%;
-    left:13%;
+.spin {
+  transform: rotate(360deg);
 }

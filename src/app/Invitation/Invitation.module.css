@@ -48,7 +48,7 @@
 
 .flowerdown{
   position: absolute;
-  bottom: -10%;
+  bottom: 0%;
   left: -20%;
   transform: rotate(180deg);
   animation: appearAnimation 2s ease-out forwards;
