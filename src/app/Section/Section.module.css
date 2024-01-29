@@ -13,6 +13,11 @@
   .counterContainer {
     margin-top: 30%;
   }
+
+  .textTitle{
+    font-family: 'Quicksand', sans-serif;
+    
+  }
   
   .welcome {
     background-color: #F8F0E5;

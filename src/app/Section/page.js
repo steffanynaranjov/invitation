@@ -8,7 +8,7 @@ export default function Section() {
     return (
       <section className={styles.section}>
           <div className={styles.welcome}>
-              <p>Cada familia tiene una historia bienvenidos a la nuestra</p>
+              <p >Cada familia tiene una historia bienvenidos a la nuestra</p>
           </div>
           <div className={`${styles.boxText} ${styles.slideInBottom}`}>
               <p>¡Nos casamos!</p>

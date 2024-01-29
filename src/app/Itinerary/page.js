@@ -29,7 +29,7 @@ export default function Itinerary() {
   return (
     <main className={styles.main}>
       <div className={styles.top}>
-        <p>¡Nos encantaría que nos acompañaras!</p>
+        <p className={styles.title}>¡Nos encantaría que nos acompañaras!</p>
       </div>
       <h3 className={styles.title}>Itinerario</h3>
       <div className={styles.carouselContainer}>
