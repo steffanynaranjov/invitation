@@ -17,6 +17,14 @@ const Music = () => {
   }, [isPlaying]);
 
   const handleStartPlaying = () => {
+    const audio = document.getElementById('audio');
+
+    if (isPlaying) {
+      audio.pause();
+    } else {
+      audio.play();
+    }
+
     setIsPlaying(!isPlaying);
   };
 

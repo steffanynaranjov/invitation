@@ -1,20 +1,20 @@
-'use client'
-
+// Home.js
+'use client';
 import { useState } from 'react';
 import styles from './Home.module.css';
 import Image from 'next/image';
+import Music from './components/Music/Music'; // Import the Music component
 
 export default function Home() {
-
   const [isClicked, setIsClicked] = useState(false);
 
   const handleClick = () => {
     setIsClicked(!isClicked);
   };
 
-    return (
-      <main className={styles.main}>
-        <div className={styles.sobre}>
+  return (
+    <main className={styles.main}>
+      <div className={styles.sobre}>
         <a
           className={styles.homepage}
           href="/Home"
@@ -29,7 +29,8 @@ export default function Home() {
             className={`${styles.logo} ${isClicked ? styles.spin : ''}`}
           />
         </a>
-        </div>
-      </main>
-    );
-  }
+      </div>
+      {isClicked && <Music />} {/* Render Music component when isClicked is true */}
+    </main>
+  );
+}
