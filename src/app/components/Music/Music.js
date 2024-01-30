@@ -1,20 +1,22 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import styles from './Music.module.css';
 
 const Music = () => {
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
 
-  const handleStartPlaying = () => {
+  useEffect(() => {
     const audio = document.getElementById('audio');
 
     if (isPlaying) {
-      audio.pause();
-    } else {
       audio.play();
+    } else {
+      audio.pause();
     }
+  }, [isPlaying]);
 
+  const handleTogglePlaying = () => {
     setIsPlaying(!isPlaying);
   };
 
@@ -22,14 +24,14 @@ const Music = () => {
     <div>
       <main>
         <div className={styles.divImage}>
-        <Image
-        className={styles.music}
-          src={isPlaying ? '/sounon.png' : '/soundoff.png'}
-          width={40}
-          height={40}
-          alt={isPlaying ? 'Sound On' : 'Sound Off'}
-          onClick={handleStartPlaying}
-        />
+          <Image
+            className={styles.music}
+            src={isPlaying ? '/sounon.png' : '/soundoff.png'}
+            width={40}
+            height={40}
+            alt={isPlaying ? 'Sound On' : 'Sound Off'}
+            onClick={handleTogglePlaying}
+          />
         </div>
         <audio id="audio">
           <source src="/song.mp3" type="audio/mpeg" />

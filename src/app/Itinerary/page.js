@@ -6,10 +6,10 @@ import Image from 'next/image';
 
 export default function Itinerary() {
   const images = [
-    "/ceremony.gif",
-    "/reception.gif",
-    "/cena.gif",
-    "/fiesta.gif",
+    "/ceremony.jpeg",
+    "/coctel.jpeg",
+    "/cena.jpeg",
+    "/party.jpeg",
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -33,20 +33,20 @@ export default function Itinerary() {
       </div>
       <h3 className={styles.title}>Itinerario</h3>
       <div className={styles.carouselContainer}>
-        <button className={styles.navButton} onClick={handlePrev}>
+        <div className={styles.carouselImage}>
+        <button className={styles.navButtonLeft} onClick={handlePrev}>
           &lt;
         </button>
-        <div className={styles.carouselImage}>
           <Image
             src={images[currentImageIndex]}
-            width={100}
-            height={100}
+            width={500}
+            height={300}
             alt={`Event ${currentImageIndex + 1}`}
           />
-        </div>
-        <button className={styles.navButton} onClick={handleNext}>
+        <button className={styles.navButtonRight} onClick={handleNext}>
           &gt;
         </button>
+        </div>
       </div>
       <p className={styles.text}>{getEventName(currentImageIndex)}</p>
       <div className={styles.dotsContainer}>

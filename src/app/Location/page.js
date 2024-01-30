@@ -44,7 +44,7 @@ export default function Location() {
       <h3 className={styles.location}>Ubicación</h3>
       <div className={styles.image}></div>
       <p>Gitana Del Mar Boutique Beach Resort</p>
-      <p>Kilometer 46 vía Riohacha.
+      <p>Kilometro 46 vía Riohacha.
         Santa Marta, 470001</p>
       <button className={styles.map} onClick={openGoogleMaps}>
       <Image
