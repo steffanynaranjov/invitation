@@ -16,7 +16,7 @@ const Music = () => {
     }
   }, [isPlaying]);
 
-  const handleTogglePlaying = () => {
+  const handleStartPlaying = () => {
     setIsPlaying(!isPlaying);
   };
 
@@ -30,7 +30,7 @@ const Music = () => {
             width={40}
             height={40}
             alt={isPlaying ? 'Sound On' : 'Sound Off'}
-            onClick={handleTogglePlaying}
+            onClick={handleStartPlaying}
           />
         </div>
         <audio id="audio">
